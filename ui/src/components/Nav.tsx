@@ -1,5 +1,5 @@
-import { AccountBoxOutlined, ArticleOutlined, BookmarkBorderOutlined, EmailOutlined, ExploreOutlined, Home, NotificationsOutlined } from "@mui/icons-material";
-import { Link } from "react-router-dom";
+import { AccountBoxOutlined, ArticleOutlined, BookmarkBorderOutlined, EmailOutlined, ExploreOutlined, Home, NotificationsOutlined } from "@mui/icons-material"
+import { Link } from "react-router-dom"
 
 export default function Nav() {
   return (
