@@ -1,4 +1,4 @@
-import { AccountBoxOutlined, ArticleOutlined, BookmarkBorderOutlined, EmailOutlined, ExploreOutlined, Home, NotificationsOutlined } from "@mui/icons-material"
+import { AccountBoxOutlined, EmailOutlined, ExploreOutlined, Home, NotificationsOutlined } from "@mui/icons-material"
 import { Link } from "react-router-dom"
 
 export default function Nav() {
@@ -8,8 +8,8 @@ export default function Nav() {
       <Link to="/explore"><ExploreOutlined /> Explore</Link>
       <Link to="/notifications"><NotificationsOutlined /> Notifications</Link>
       <Link to="/messages"><EmailOutlined /> Messages</Link>
-      <Link to="/lists"><ArticleOutlined /> Lists</Link>
-      <Link to="/bookmarks"><BookmarkBorderOutlined />Bookmarks</Link>
+      {/* <Link to="/lists"><ArticleOutlined /> Lists</Link> */}
+      {/* <Link to="/bookmarks"><BookmarkBorderOutlined />Bookmarks</Link> */}
       <Link to="/profile"><AccountBoxOutlined />Profile</Link>
     </nav>
   )
