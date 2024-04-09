@@ -1,5 +1,11 @@
-import Router from "./Router"
+import { Outlet } from "react-router-dom"
+import Nav from "./components/Nav"
 
 export default function App() {
-  return <Router />
+  return (
+    <main className="flex">
+      <Nav />
+      <Outlet />
+    </main>
+  )
 }
