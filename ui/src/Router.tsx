@@ -5,28 +5,35 @@ import Explore from "./pages/Explore"
 import Notifications from "./pages/Notifications"
 import Messages from "./pages/Messages"
 import Profile from "./pages/Profile"
+import App from "./App"
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
-    errorElement: <Error />
-  },
-  {
-    path: "/explore",
-    element: <Explore />
-  },
-  {
-    path: "/notifications",
-    element: <Notifications />
-  },
-  {
-    path: "/messages",
-    element: <Messages />
-  },
-  {
-    path: "/profile",
-    element: <Profile />
+    element: <App />,
+    errorElement: <Error />,
+    children: [
+      {
+        path: '/',
+        element: <Home />
+      },
+      {
+        path: "/explore",
+        element: <Explore />
+      },
+      {
+        path: "/notifications",
+        element: <Notifications />
+      },
+      {
+        path: "/messages",
+        element: <Messages />
+      },
+      {
+        path: "/profile",
+        element: <Profile />
+      }
+    ]
   }
 ])
 
